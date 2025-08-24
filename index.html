@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfRican Nigerian Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-red-600 text-white px-6 py-4 flex justify-between items-center fixed w-full top-0 z-50 shadow-md">
+    <h1 class="text-2xl font-bold">🍲 Auntie’s Kitchen</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+      <li><a href="#menu" class="hover:text-yellow-300">Menu</a></li>
+      <li><a href="#gallery" class="hover:text-yellow-300">Gallery</a></li>
+      <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+    </ul>
+    <button class="md:hidden bg-yellow-400 text-black px-3 py-2 rounded-lg">Menu</button>
+  </nav>
+
+ 
+<!-- Hero Section (Carousel) -->
+<section id="home" class="relative w-full overflow-hidden mt-16">
+  <div class="carousel flex transition-transform duration-700 ease-in-out" style="width:300%">
+    <div class="w-full flex-shrink-0">
+      <img src="./img/fcd9dd242d9d45ed9f045b6d6b8b6e95.jpg" class="w-full h-[600px] object-cover" alt="Food 1">
+    </div>
+    <div class="w-full flex-shrink-0">
+      <img src="./img/ce2f442e1a4449f890492987e5a3ed84.jpg" class="w-full h-[600px] object-cover" alt="Food 2">
+    </div>
+    <div class="w-full flex-shrink-0">
+      <img src="./img/43d2278c6449426a91a60ca5d29ffdc4.jpg" class="w-full h-[600px] object-cover" alt="Food 3">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="absolute inset-0 flex items-center justify-between px-6">
+    <button id="prev" class="bg-black bg-opacity-40 text-white px-3 py-2 rounded-full">‹</button>
+    <button id="next" class="bg-black bg-opacity-40 text-white px-3 py-2 rounded-full">›</button>
+  </div>
+
+  <!-- Text Overlay -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40">
+    <h2 class="text-5xl font-bold">Authentic Homemade Meals</h2>
+    <p class="mt-4 text-lg">Taste the tradition, straight from African Nigerian Restaurant 🍴</p>
+    <a href="#menu" class="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-500">See Menu</a>
+  </div>
+</section>
+
+<!-- Carousel Script -->
+<script>
+  const carousel = document.querySelector('.carousel');
+  const slides = carousel.children;
+  let index = 0;
+  let autoSlide;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  document.getElementById('next').addEventListener('click', () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  function startAutoSlide() {
+    autoSlide = setInterval(nextSlide, 4000); // every 4 seconds
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlide);
+    startAutoSlide();
+  }
+
+  // Start auto-sliding when page loads
+  startAutoSlide();
+</script>
+
+
+
+
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="p-8 md:p-16 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700">
+      African Nigerian Restaurant brings the heart of Africa to your table 🇳🇬. 
+      We serve freshly made, authentic dishes that remind you of home. 
+      From spicy jollof rice to delicious soups, every bite is cooked with love.
+    </p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="p-8 md:p-16 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-6">Our Menu</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <img src="./img/IMG-20250716-WA0042.jpg" class="rounded-lg mb-4 w-full h-40 object-cover" alt="Jollof Rice">
+        <h3 class="font-bold text-xl">Jollof Rice</h3>
+        <p class="text-gray-600">$12</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <img src="./img/download.jpg" class="rounded-lg mb-4 w-full h-40 object-cover" alt="Egusi Soup">
+        <h3 class="font-bold text-xl">Egusi Soup</h3>
+        <p class="text-gray-600">$15</p>
+      </div>
+      <div class="bg-white shadow-lg p-6 rounded-xl text-center">
+        <img src="./img/IMG-20250716-WA0039.jpg" class="rounded-lg mb-4 w-full h-40 object-cover" alt="Suya">
+        <h3 class="font-bold text-xl">Fish Barbecue</h3>
+        <p class="text-gray-600">$10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="p-8 md:p-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-6">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <img src="./img/91c772044d424230bd29c9be2a510df0.jpg" class="rounded-lg object-cover">
+      <img src="./img/5a700ab2a1cc453cae5fb67dcc8efcc6.jpg" class="rounded-lg object-cover">
+      <img src="./img/96ff898325b44248a256b03d923cebb0.jpg" class="rounded-lg object-cover">
+      <img src="./img/0ad8d059fd6347339b9029dc470ef689.jpg" class="rounded-lg object-cover">
+   <img src="./img/fcd9dd242d9d45ed9f045b6d6b8b6e95.jpg" class="rounded-lg object-cover">
+   <img src="./img/download.jpg" class="rounded-lg object-cover">
+   <img src="./img/IMG-20250716-WA0039.jpg" class="rounded-lg object-cover">
+     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-red-600 text-white p-12 text-center">
+    <h2 class="text-3xl font-bold">Contact Us</h2>
+    <p class="mt-4">📍 53 Dunlop St E, Barrie, ON L4M 1A7..<br /> Canada</p>
+    <p>📞 +1 (647) 704-0171</p>
+    <p>✉️ auntie@kitchen.com</p>
+    <a href="https://wa.me/1234567890" target="_blank" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-500">
+      Chat on WhatsApp
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center p-6">
+    © 2025 Afican Nigerian Restaurant. All rights reserved.
+  </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const slides = carousel.children;
+    let index = 0;
+
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+
+</body>
+</html>
