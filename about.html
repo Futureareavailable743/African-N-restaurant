@@ -1,126 +1,175 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>African Nigerian Restaurant | Home</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>African Nigerian Restaurant</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body class="font-sans">
-
 <style>
-#dd{
-background-color: rgba(247, 14, 14, 0.932);
-color: white;
+ 
+   .floating-whatsapp, .floating-instagram {
+            position: fixed;
+            z-index: 999; /* Ensure it's on top */
+            width: 60px; /* Adjust size */
+            height: 60px;
+            border-radius: 50%; /* Make it round */
+            text-align: center;
+            line-height: 60px;
+            text-decoration: none;
+            color: white;
+        }
+        .floating-whatsapp {
+            left: 20px; /* Position from the left */
+            bottom: 20px; /* Position from the bottom */
+            background-color: #25D366; /* WhatsApp green */
+        }
+        .floating-instagram {
+            right: 20px; /* Position from the right */
+            bottom: 20px; /* Position from the bottom */
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Instagram gradient */
+        }
+        .img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+img{
+ 
+  border-radius: 5px;
+}
+
+
+.aboutus{
+background-image: url(./menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center;
 
 }
+
 </style>
+<body>
 
-  
-
-<!--navbar-->
-<div id="dd">
- <header class="p-3 mb-3 border-bottom"> 
-  <div class="container "> 
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-2xl font-bold text-white">🍴 African Nigerian Restaurant
-       <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
-  <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
-</svg>
-      </a>
-       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-         <li>
-        <a href="./index.html" class="nav-link px-2 link-secondary">Home</a>
-      </li>
-       <li>
-        <a href="./menu.html" class="nav-link px-2 link-body-emphasis">Menu</a>
-      </li> 
-      <li>
-        <a href="./gallery.html" class="nav-link px-2 link-body-emphasis">Gallery</a>
-      </li>
-       <li><a href="./about.html" class="nav-link px-2 link-body-emphasis">About</a></li> 
-    </ul>
-     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"> 
-      <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-     </form>
-      <div class="dropdown text-end"> 
-        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"> 
-          <img src="./img/43d2278c6449426a91a60ca5d29ffdc4.jpg" alt="mdo" width="32" height="32" class="rounded-circle"> 
-        </a> 
-        <ul class="dropdown-menu text-small"> 
-          <li><a class="dropdown-item" href="./menu.html">menu...</a></li> 
-          <li><a class="dropdown-item" href="./gallery.html">gallery</a></li>
-           <li><a class="dropdown-item" href="./contact.html">contact</a></li> 
-           <li><hr class="dropdown-divider"></li> 
-           <li><a class="dropdown-item" href="#">Sign out</a></li> 
-          </ul>
-         </div> 
-        </div> 
-      </div> 
-    </header>  
-
-</div>
-
-
-
-<!-- about -->
-
-<section class="py-16 bg-gray-100"   class="h-screen bg-cover bg-center flex items-center justify-center text-center relative" 
-           style="background-image: url('img/download.jpg');" >
-  <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
-<div style="background-color: rgb(241, 241, 232);">
-
-    <h2 class="text-4xl font-bold  mb-6">About Us</h2>
-   
- </div>
-
- <div class="container my-5">
-   <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5"> 
-  <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button> 
-  <div class="col-md-6 offset-md-3">
-     <img src="./61a1a58d51444ce599330d9194632c40.jpg" class="rounded-xl shadow-lg mx-auto w-80 " alt="Auntie in Kitchen">
-  
-
- 
-    </div> 
-  <h1 class="text-body-emphasis text-5xl font-bold ">🍴 African Nigerian Restaurant</h1>
-    <p class="col-lg-6 mx-auto mb-4">
-<p class="mt-3">Welcome to 🍴 African Nigerian Restaurant, where we bring the warmth of home-cooked African and Canadian cuisine to your table, all prepared with love and the freshest ingredients. Our passion is to make every customer feel like family.
-</p>
-<p class="mt-3">At 🍴 African Nigerian Restaurant, you'll discover a vibrant blend of flavors. From the rich, aromatic spices of our Nigerian jollof rice and the savory, slow-cooked Canadian tourtière, each dish is a celebration of culture and taste. We source fresh, local ingredients whenever possible, ensuring every bite is bursting with flavor.
-</p>
-<p class="mt-3">🍴 African Nigerian Restaurant was born from a desire to share the culinary heritage of Africa and the comforting traditions of Canada. Our chefs, with their years of experience, are dedicated to crafting authentic dishes that evoke memories and create new ones. We believe that food is a universal language, and we invite you to join us on a delicious journey.
-</p>
-<p class="mt-3">Visit us at <span class="text-body-emphasis"> Dunlop St E, Barrie, ON L4M 1A7 </span>or <span class="text-body-emphasis"> Call us at +1(647)704-0171 </span>to make a reservation. We are open [Monday-Saturday] from [8 : 00 AM] to [10 : PM]. Follow us on [Social Media Handles] to stay updated on our latest specials and events. We can't wait to welcome you!"
-</p>
-
-</p>
- <button class="btn btn-secondary px-5 mt-3 mb-5" type="button">
-Call to action
-</button> 
-</div> 
-</div>
+<!--Navbar-->
+<section>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span class="text-warning">🍴 African Nigerian Restaurant</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">🍴 African Nigerian Restaurant</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./menu.html">Memu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="./contact.html">📞Contact</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://wa.me/message/RCIU7AF5HCYHC1 ">Order Online</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </div>
-
-
-
+</nav>
 </section>
 
 
-<!-- Footer -->
-<footer class="bg-red-600 text-gray-300 text-center py-6 mt-12">
-  <p>&copy; 2025 African Nigerian Restaurant. All Rights Reserved.</p>
-</footer>
 
 
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!--About us-->
+<section class="h-screen bg-cover bg-center  flex items-center justify-center text-center relative" 
+           style="background-image: url('./about.jpg'); border-radius: 5px;">
+       
+<div class=" aboutus container mt-5  col-xxl-8 px-4 py-5"
+    <header class="text-center mb-4">
+        <h1 class="text-warning">About US</h1>
+        <p class="lead  me-lg-3">Welcome to our page!</p>
+    </header>
+
+    <section class="mb-5">
+        <h2 class="text-warning text-8xl">🍴 African Nigerian Restaurant</h2>
+       <div class=" container ">
+        <p class="mt-3">Welcome to 🍴 African Nigerian Restaurant, where we bring the warmth of home-cooked African and Canadian cuisine to your table, all prepared with love and the freshest ingredients. Our passion is to make every customer feel like family.
+</p>
+<p >At 🍴 African Nigerian Restaurant, you'll discover a vibrant blend of flavors. From the rich, aromatic spices of our Nigerian jollof rice and the savory, slow-cooked Canadian tourtière, each dish is a celebration of culture and taste. We source fresh, local ingredients whenever possible, ensuring every bite is bursting with flavor.
+</p>
+<p >🍴 African Nigerian Restaurant was born from a desire to share the culinary heritage of Africa and the comforting traditions of Canada. Our chefs, with their years of experience, are dedicated to crafting authentic dishes that evoke memories and create new ones. We believe that food is a universal language, and we invite you to join us on a delicious journey.
+</p>
+  </div>
+</section>
+
+    <section>
+        <h2 class="text-warning">Skills</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Welcome to 🍴 African Nigerian Restaurant! we're passionate about sharing the rich flavors of Nigeria. </li>
+            <li class="list-group-item">Our chefs create authentic dishes using fresh inggredients, bringing you a tste of home.</li>
+            <li class="list-group-item"> We focus on creating dishes that evoke cherished memories.</li>
+            <li class="list-group-item">Join us for a delicious journey through Nigerian cuisine!.</li>
+        </ul>
+    </section>
+</div>
+
+</section>
+ <hr class="featurette-divider"> <!-- /END THE FEATURETTES --> </div><!-- /.container --> <!-- FOOTER --> 
+            <footer class="container"> <p class="float-end"><a href="#">Back to top</a></p> 
+              <p>@🍴 African Nigerian Restaurant · <a href="#">Privacy</a> · <a href="#">Terms</a></p> </footer> 
+   
+             
+<div class="container bg-warning">
+   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top "> 
+    <div class="col mb-3">
+       <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+         <img src="./fish.jpg" class="bi me-2" width="40" height="32" aria-hidden="true"></svg> </a> <p class="text-body-secondary text-secondary">🍴 African Nigerian Restaurant</p> </div> <div class="col mb-3"></div> <div class="col mb-3"> <h5>Section</h5> <ul class="nav flex-column"> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> </ul> </div> <div class="col mb-3"> <h5>Section</h5> <ul class="nav flex-column"> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> </ul> </div> <div class="col mb-3"> <h5>Section</h5> <ul class="nav flex-column"> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> </ul> </div> </footer> </div>
+</section>
+
+  <div class="container"> 
+ <a href="https://wa.me/message/RCIU7AF5HCYHC1" class="floating-whatsapp" target="_blank">
+            <img class="img" src="./download.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://www.threads.com/@africannigerianresturant?igshid=NTc4MTIwNjQ2YQ==" class="floating-instagram" target="_blank">
+            <img class="img" src="./IG.jpg" alt="Instagram">
+        </a>
+</div> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
 
